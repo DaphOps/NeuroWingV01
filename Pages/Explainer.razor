@@ -1,0 +1,48 @@
+@page "/Explainer"
+
+<div class="ExplainerContent shadow p-5 rounded">
+    <div class="ExplainerTitle">
+        <h1 class="pb-4">Explainer</h1>
+    </div>
+    
+    <div class="ExplainerStepsAdd">
+        <div class="row">
+            <div class="col-1">
+                <form action="AddExplainer">
+                    <input type="submit" value="+" class="btn btn-success" />
+                </form>
+            </div>
+            <div class="col-11">
+                <p>Add Body Double directions</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="BodyDoubleStepsTable">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>How long does it take?</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Cooking an egg (you can click me later)</td>
+                <td>This is how you can cook an egg</td>
+                <td>8 minutes</td>
+                <td>
+                    <button class="btn btn-primary">Edit</button>
+                    <button class="btn btn-danger">Delete</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@code {
+    
+}

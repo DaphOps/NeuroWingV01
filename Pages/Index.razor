@@ -1,7 +1,80 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
 
-Welcome to your new app.
 
-<SurveyPrompt Title="How is Blazor working for you?"/>
+<div class="MainPageContent shadow p-5 rounded">
+    <h1>Hi @name, welcome back!</h1>
+    
+    <div class="TaskContent pt-4">
+        <div class="row">
+            <div class="col-6">
+                <p>Here is a small overview of your tasks today:</p>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Completed</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>@taskOneName</td>
+                        <td>@TaskStatus.Yes</td>
+                    </tr>
+                    <tr>
+                        <td>@taskTwoName</td>
+                        <td>@TaskStatus.No</td>
+                    </tr>
+                    <tr>
+                        <td>@taskThreeName</td>
+                        <td>@TaskStatus.Yes</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="col-6">
+                <p>Here is a small overview of your upcoming tasks:</p>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Completed</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>@taskOneName</td>
+                        <td>@TaskStatus.Yes</td>
+                    </tr>
+                    <tr>
+                        <td>@taskTwoName</td>
+                        <td>@TaskStatus.No</td>
+                    </tr>
+                    <tr>
+                        <td>@taskThreeName</td>
+                        <td>@TaskStatus.Yes</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    private string name = "Daphne";
+    private string taskOneName= "Cleaning up the house";
+    private string taskTwoName= "Doing the dishes";
+    private string taskThreeName= "Taking out the trash";
+    
+    private enum TaskStatus
+    {
+        Yes,
+        No
+    }
+}
+
+
+@* <SurveyPrompt Title="How is Blazor working for you?"/> *@

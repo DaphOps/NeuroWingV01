@@ -1,0 +1,34 @@
+@page "/AddExplainer"
+
+<div class="AddActivity shadow p-5 rounded">
+    <div class="AddActivityTitle">
+        <h1>Add an Explainer task</h1>
+    </div>
+    
+    <div class="AddActivityForm">
+        <form>
+            <div class="form-group">
+                <label for="activityName">Activity Name</label>
+                <input type="text" class="form-control" id="activityName" placeholder="Enter activity name">
+            </div>
+            <div class="form-group">
+                <label for="activityDescription">Activity Description</label>
+                <input type="text" class="form-control" id="activityDescription" placeholder="Enter activity description">
+            </div>
+            <div class="form-group">
+                <label for="activityDuration">Activity Duration</label>
+                <input type="text" class="form-control" id="activityDuration" placeholder="Enter activity duration">
+            </div>
+            <div class="form-group">
+                <label for="activitySteps">Activity steps</label>
+                <textarea class="form-control" type="text" id="activitySteps" placeholder="Enter steps for activity">
+                </textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Create!</button>
+        </form>
+    </div>
+</div>
+
+@code {
+    
+}

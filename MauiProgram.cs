@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Blazorise;
+using Microsoft.Extensions.Logging;
 using NeuroWing.Data;
 
 namespace NeuroWing;
@@ -20,6 +21,8 @@ public static class MauiProgram
 #endif
 
         builder.Services.AddSingleton<WeatherForecastService>();
+        
+        builder.Services.AddBlazorise();
 
         return builder.Build();
     }
